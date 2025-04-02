@@ -1,7 +1,6 @@
-[gd_scene load_steps=10 format=3 uid="uid://b7glpda145gja"]
+[gd_scene load_steps=9 format=3 uid="uid://b7glpda145gja"]
 
-[ext_resource type="Texture2D" uid="uid://dqd0js8t1ugpe" path="res://textures/robloxian/Robloxian.webp" id="1_q1j22"]
-[ext_resource type="Script" uid="uid://c03cln0txp8s3" path="res://scripts/mainmenu/robloxian.gd" id="2_8yjwh"]
+[ext_resource type="Texture2D" uid="uid://dv82j55tmr3ba" path="res://textures/fern/fern estático sem fundo.png" id="1_3pujl"]
 [ext_resource type="Shader" uid="uid://di1swemwtf7ew" path="res://shaders/vhs.gdshader" id="2_hvx5i"]
 [ext_resource type="Script" uid="uid://bwvxscmn4lb7r" path="res://scripts/mainmenu/continue.gd" id="2_rwf37"]
 [ext_resource type="Script" uid="uid://duh08ps37nek3" path="res://scripts/mainmenu/newgame.gd" id="3_iw76h"]
@@ -42,16 +41,6 @@ offset_right = 1920.0
 offset_bottom = 1080.0
 color = Color(0, 0, 0, 1)
 
-[node name="roblox char" type="TextureRect" parent="."]
-offset_left = 1000.0
-offset_top = 232.0
-offset_right = 2112.0
-offset_bottom = 1692.0
-texture = ExtResource("1_q1j22")
-expand_mode = 5
-stretch_mode = 4
-script = ExtResource("2_8yjwh")
-
 [node name="game title" type="RichTextLabel" parent="."]
 offset_left = 150.0
 offset_top = 51.0
@@ -69,6 +58,11 @@ offset_bottom = 1020.0
 theme_override_font_sizes/font_size = 100
 text = "Novo Jogo"
 flat = true
+
+[node name="FernEstáticoSemFundo" type="Sprite2D" parent="."]
+position = Vector2(1470.88, 507.317)
+scale = Vector2(7.095, 7.13354)
+texture = ExtResource("1_3pujl")
 
 [node name="TextButtonContinue" type="Button" parent="."]
 offset_left = 92.0
@@ -120,5 +114,3 @@ autoplay = true
 [node name="timera" type="Timer" parent="."]
 wait_time = 0.5
 autostart = true
-
-[connection signal="timeout" from="timera" to="roblox char" method="_on_timera_timeout"]
