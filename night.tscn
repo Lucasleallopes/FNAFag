@@ -1,4 +1,4 @@
-[gd_scene load_steps=125 format=3 uid="uid://cfe4co4bwj0m3"]
+[gd_scene load_steps=131 format=3 uid="uid://cfe4co4bwj0m3"]
 
 [ext_resource type="ArrayMesh" uid="uid://rkhrapgtt4cv" path="res://models/restaurant/diningarea.obj" id="1_bs5qf"]
 [ext_resource type="Shader" uid="uid://di1swemwtf7ew" path="res://shaders/vhs.gdshader" id="2_jqsf5"]
@@ -17,11 +17,9 @@
 [ext_resource type="ArrayMesh" uid="uid://mavk36moetxf" path="res://models/restaurant/piratecove.obj" id="8_gyjse"]
 [ext_resource type="Script" uid="uid://cv8ls6teubslu" path="res://scripts/night/hallwaylamp.gd" id="9_0i2tj"]
 [ext_resource type="ArrayMesh" uid="uid://buxgsa5lfepgi" path="res://models/restaurant/piratecovecurtain.obj" id="9_yfo32"]
-[ext_resource type="Texture2D" uid="uid://dqd0js8t1ugpe" path="res://textures/robloxian/Robloxian.webp" id="11_jrud3"]
 [ext_resource type="Script" uid="uid://cl0c6uvhlpfig" path="res://scripts/night/flicker_light.gd" id="13_mv2pp"]
 [ext_resource type="Script" uid="uid://dy44df5els2x2" path="res://scripts/night/cam6.gd" id="15_l27qn"]
 [ext_resource type="Texture2D" uid="uid://bads7y85llh2q" path="res://textures/icon.svg" id="15_pmb1m"]
-[ext_resource type="Texture2D" uid="uid://bccstkmedfill" path="res://textures/robloxian/Robloxian_sad.webp" id="15_rjmau"]
 [ext_resource type="ArrayMesh" uid="uid://bquhi700w45ge" path="res://models/baconhairstationary.obj" id="16_6iupt"]
 [ext_resource type="Material" uid="uid://dladdj4jkwt3q" path="res://shaders/spatial/noise.material" id="16_ewy1m"]
 [ext_resource type="Script" uid="uid://o6gybbtiuwqp" path="res://scripts/night/mapbutton.gd" id="17_mja26"]
@@ -44,6 +42,14 @@
 [ext_resource type="AudioStream" uid="uid://b6t4at862klea" path="res://audio/sfx/subspace-tripmine.wav" id="28_14rqe"]
 [ext_resource type="AudioStream" uid="uid://cuthd3e4uh145" path="res://audio/sfx/running.mp3" id="30_wt3yy"]
 [ext_resource type="AudioStream" uid="uid://b5tcx4fytvgg8" path="res://audio/sfx/quirky-at-night.mp3" id="32_8uwsh"]
+[ext_resource type="Texture2D" uid="uid://c6ihs1gf0yhv2" path="res://models/fagPlaces/file_2025-04-04_19.58.59.png" id="40_k3im4"]
+[ext_resource type="Texture2D" uid="uid://b764ukfrtttps" path="res://models/fagPlaces/file_2025-04-04_20.00.16.png" id="41_d06fp"]
+[ext_resource type="Texture2D" uid="uid://c8fk4wgfkhim8" path="res://models/fagPlaces/file_2025-04-04_20.01.35.png" id="42_qdtyn"]
+[ext_resource type="Texture2D" uid="uid://d1yaxcg1r8qa2" path="res://models/fagPlaces/file_2025-04-04_20.03.17.png" id="43_hrw8o"]
+[ext_resource type="Texture2D" uid="uid://ch5oekif8w7an" path="res://models/fagPlaces/file_2025-04-04_20.04.42.png" id="44_c3x82"]
+[ext_resource type="Texture2D" uid="uid://lqle72oyomqk" path="res://models/fagPlaces/file_2025-04-04_20.10.28.png" id="45_o6d2r"]
+[ext_resource type="Texture2D" uid="uid://codomgk21aepw" path="res://models/fagPlaces/file_2025-04-04_20.12.21.png" id="46_q6u72"]
+[ext_resource type="Texture2D" uid="uid://jwvsl4ddv61t" path="res://models/fagPlaces/file_2025-04-04_20.13.26.png" id="47_4xju4"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gacj4"]
 albedo_texture = ExtResource("2_pd7yv")
@@ -137,7 +143,6 @@ albedo_texture = ExtResource("2_pd7yv")
 ao_enabled = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8pnd4"]
-albedo_texture = ExtResource("11_jrud3")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mkj0f"]
 albedo_texture = ExtResource("2_pd7yv")
@@ -147,7 +152,6 @@ ao_enabled = true
 albedo_texture = ExtResource("15_pmb1m")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5mlmr"]
-albedo_texture = ExtResource("15_rjmau")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_du4bj"]
 albedo_texture = ExtResource("15_pmb1m")
@@ -156,7 +160,6 @@ albedo_texture = ExtResource("15_pmb1m")
 albedo_texture = ExtResource("15_pmb1m")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i5kon"]
-albedo_texture = ExtResource("15_rjmau")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7d8ft"]
 albedo_color = Color(0.278431, 0.207843, 0, 1)
@@ -700,7 +703,7 @@ script = ExtResource("23_jep6e")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="restaurant/office/doorleft"]
 libraries = {
-"": SubResource("AnimationLibrary_dlqw0")
+&"": SubResource("AnimationLibrary_dlqw0")
 }
 
 [node name="sound_door_close" type="AudioStreamPlayer3D" parent="restaurant/office/doorleft"]
@@ -715,7 +718,7 @@ script = ExtResource("23_jep6e")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="restaurant/office/doorright"]
 libraries = {
-"": SubResource("AnimationLibrary_dlqw0")
+&"": SubResource("AnimationLibrary_dlqw0")
 }
 
 [node name="sound_door_close" type="AudioStreamPlayer3D" parent="restaurant/office/doorright"]
@@ -798,12 +801,12 @@ panning_strength = 0.3
 
 [node name="foxy running anim" type="AnimationPlayer" parent="restaurant/animatronics/foxy"]
 libraries = {
-"": SubResource("AnimationLibrary_7j0dg")
+&"": SubResource("AnimationLibrary_7j0dg")
 }
 
 [node name="foxy jumpscare anim" type="AnimationPlayer" parent="restaurant/animatronics/foxy"]
 libraries = {
-"": SubResource("AnimationLibrary_pakt3")
+&"": SubResource("AnimationLibrary_pakt3")
 }
 
 [node name="Cam6" type="Camera3D" parent="restaurant"]
@@ -827,6 +830,38 @@ theme_override_font_sizes/normal_font_size = 80
 text = "CAMERA 6 UNAVALABLE
 ONLY AUDIO AVAILABLE"
 
+[node name="movecamleft" type="StaticBody2D" parent="CanvasLayer/cam6text"]
+position = Vector2(6327.39, -363)
+input_pickable = true
+
+[node name="movecamright" type="StaticBody2D" parent="CanvasLayer/cam6text"]
+position = Vector2(6327.39, -363)
+input_pickable = true
+
+[node name="map buttons" type="Node2D" parent="CanvasLayer/cam6text"]
+position = Vector2(6327.39, -363)
+
+[node name="debugtext" type="Node2D" parent="CanvasLayer/cam6text"]
+position = Vector2(6327.39, -363)
+
+[node name="foxy" type="RichTextLabel" parent="CanvasLayer/cam6text/debugtext"]
+visible = false
+offset_left = 1267.0
+offset_right = 1920.0
+offset_bottom = 377.0
+theme_override_font_sizes/normal_font_size = 30
+text = "DEBUG FOXY
+movement chance: 0.0000>13.7452
+state: 0"
+
+[node name="increasestate" type="Button" parent="CanvasLayer/cam6text/debugtext"]
+offset_left = 1376.0
+offset_top = 88.0
+offset_right = 1408.0
+offset_bottom = 128.0
+theme_override_font_sizes/font_size = 21
+text = "+1"
+
 [node name="powerdisplay" type="RichTextLabel" parent="CanvasLayer"]
 clip_contents = false
 offset_left = 24.0
@@ -836,6 +871,39 @@ offset_bottom = 1085.0
 theme_override_font_sizes/normal_font_size = 60
 text = "power left: 100%
 "
+
+[node name="File2025-04-0419_58_59" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(3287, 604)
+texture = ExtResource("40_k3im4")
+
+[node name="File2025-04-0420_00_16" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(5093, 540)
+texture = ExtResource("41_d06fp")
+
+[node name="File2025-04-0420_01_35" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(795, 2176)
+scale = Vector2(0.765971, 0.765971)
+texture = ExtResource("42_qdtyn")
+
+[node name="File2025-04-0420_03_17" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(3296, 2248)
+texture = ExtResource("43_hrw8o")
+
+[node name="File2025-04-0420_04_42" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(5342, 2184)
+texture = ExtResource("44_c3x82")
+
+[node name="File2025-04-0420_10_28" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(885, 3660)
+texture = ExtResource("45_o6d2r")
+
+[node name="File2025-04-0420_12_21" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(3106, 3707)
+texture = ExtResource("46_q6u72")
+
+[node name="File2025-04-0420_13_26" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(5374, 3707)
+texture = ExtResource("47_4xju4")
 
 [node name="vhs shader" type="ColorRect" parent="CanvasLayer"]
 material = SubResource("ShaderMaterial_ox47n")
@@ -881,8 +949,8 @@ offset_left = 1610.0
 offset_top = 710.0
 offset_right = 1667.0
 offset_bottom = 744.0
-theme_override_styles/normal = SubResource("StyleBoxEmpty_s2gj7")
 theme_override_styles/focus = ExtResource("17_ppxyb")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_s2gj7")
 script = ExtResource("17_mja26")
 
 [node name="cam1B" type="Button" parent="CanvasLayer/map buttons"]
@@ -890,8 +958,8 @@ offset_left = 1589.0
 offset_top = 769.0
 offset_right = 1644.0
 offset_bottom = 803.0
-theme_override_styles/normal = SubResource("StyleBoxEmpty_upj0j")
 theme_override_styles/focus = ExtResource("17_ppxyb")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_upj0j")
 script = ExtResource("17_mja26")
 
 [node name="cam1C" type="Button" parent="CanvasLayer/map buttons"]
@@ -899,8 +967,8 @@ offset_left = 1556.0
 offset_top = 852.0
 offset_right = 1611.0
 offset_bottom = 885.0
-theme_override_styles/normal = SubResource("StyleBoxEmpty_xaiev")
 theme_override_styles/focus = ExtResource("17_ppxyb")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_xaiev")
 script = ExtResource("17_mja26")
 
 [node name="cam2A" type="Button" parent="CanvasLayer/map buttons"]
@@ -908,8 +976,8 @@ offset_left = 1609.0
 offset_top = 973.0
 offset_right = 1666.0
 offset_bottom = 1009.0
-theme_override_styles/normal = SubResource("StyleBoxEmpty_1hm1q")
 theme_override_styles/focus = ExtResource("17_ppxyb")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_1hm1q")
 script = ExtResource("17_mja26")
 
 [node name="cam2B" type="Button" parent="CanvasLayer/map buttons"]
@@ -917,8 +985,8 @@ offset_left = 1610.0
 offset_top = 1016.0
 offset_right = 1666.0
 offset_bottom = 1051.0
-theme_override_styles/normal = SubResource("StyleBoxEmpty_2r1wv")
 theme_override_styles/focus = ExtResource("17_ppxyb")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_2r1wv")
 script = ExtResource("17_mja26")
 
 [node name="cam3" type="Button" parent="CanvasLayer/map buttons"]
@@ -926,8 +994,8 @@ offset_left = 1522.0
 offset_top = 956.0
 offset_right = 1577.0
 offset_bottom = 988.0
-theme_override_styles/normal = SubResource("StyleBoxEmpty_ymllu")
 theme_override_styles/focus = ExtResource("17_ppxyb")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ymllu")
 script = ExtResource("17_mja26")
 
 [node name="cam4A" type="Button" parent="CanvasLayer/map buttons"]
@@ -935,8 +1003,8 @@ offset_left = 1721.0
 offset_top = 974.0
 offset_right = 1779.0
 offset_bottom = 1010.0
-theme_override_styles/normal = SubResource("StyleBoxEmpty_pmr7q")
 theme_override_styles/focus = ExtResource("17_ppxyb")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_pmr7q")
 script = ExtResource("17_mja26")
 
 [node name="cam4B" type="Button" parent="CanvasLayer/map buttons"]
@@ -944,8 +1012,8 @@ offset_left = 1721.0
 offset_top = 1015.0
 offset_right = 1779.0
 offset_bottom = 1052.0
-theme_override_styles/normal = SubResource("StyleBoxEmpty_0pa5t")
 theme_override_styles/focus = ExtResource("17_ppxyb")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_0pa5t")
 script = ExtResource("17_mja26")
 
 [node name="cam5" type="Button" parent="CanvasLayer/map buttons"]
@@ -953,8 +1021,8 @@ offset_left = 1478.0
 offset_top = 797.0
 offset_right = 1533.0
 offset_bottom = 831.0
-theme_override_styles/normal = SubResource("StyleBoxEmpty_elpe7")
 theme_override_styles/focus = ExtResource("17_ppxyb")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_elpe7")
 script = ExtResource("17_mja26")
 
 [node name="cam6" type="Button" parent="CanvasLayer/map buttons"]
@@ -962,8 +1030,8 @@ offset_left = 1824.0
 offset_top = 937.0
 offset_right = 1881.0
 offset_bottom = 971.0
-theme_override_styles/normal = SubResource("StyleBoxEmpty_5lrdw")
 theme_override_styles/focus = ExtResource("17_ppxyb")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_5lrdw")
 script = ExtResource("17_mja26")
 
 [node name="cam7" type="Button" parent="CanvasLayer/map buttons"]
@@ -971,8 +1039,8 @@ offset_left = 1834.0
 offset_top = 798.0
 offset_right = 1890.0
 offset_bottom = 833.0
-theme_override_styles/normal = SubResource("StyleBoxEmpty_vwbgg")
 theme_override_styles/focus = ExtResource("17_ppxyb")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_vwbgg")
 script = ExtResource("17_mja26")
 
 [node name="monitor toggle" type="TextureButton" parent="CanvasLayer"]
@@ -986,6 +1054,7 @@ stretch_mode = 5
 [node name="debugtext" type="Node2D" parent="CanvasLayer"]
 
 [node name="foxy" type="RichTextLabel" parent="CanvasLayer/debugtext"]
+visible = false
 offset_left = 1267.0
 offset_right = 1920.0
 offset_bottom = 377.0
@@ -1009,7 +1078,7 @@ script = ExtResource("26_8e0sh")
 
 [node name="monitoranim" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_puqqh")
+&"": SubResource("AnimationLibrary_puqqh")
 }
 script = ExtResource("27_hw3dn")
 
@@ -1028,6 +1097,11 @@ script = ExtResource("27_hw3dn")
 [connection signal="timeout" from="restaurant/animatronics/foxy/movementcooldown" to="restaurant/animatronics/foxy" method="_on_movementcooldown_timeout"]
 [connection signal="timeout" from="restaurant/animatronics/foxy/state3timer" to="restaurant/animatronics/foxy" method="_on_state_3_timer_timeout"]
 [connection signal="finished" from="restaurant/animatronics/foxy/sound_jump" to="restaurant/animatronics/foxy" method="_on_sound_jump_finished"]
+[connection signal="mouse_entered" from="CanvasLayer/cam6text/movecamleft" to="restaurant/office/CamSELF" method="_on_movecamleft_mouse_entered"]
+[connection signal="mouse_exited" from="CanvasLayer/cam6text/movecamleft" to="restaurant/office/CamSELF" method="_on_movecamleft_mouse_exited"]
+[connection signal="mouse_entered" from="CanvasLayer/cam6text/movecamright" to="restaurant/office/CamSELF" method="_on_movecamright_mouse_entered"]
+[connection signal="mouse_exited" from="CanvasLayer/cam6text/movecamright" to="restaurant/office/CamSELF" method="_on_movecamright_mouse_exited"]
+[connection signal="pressed" from="CanvasLayer/cam6text/debugtext/increasestate" to="restaurant/animatronics/foxy" method="_on_button_increasestate_pressed"]
 [connection signal="mouse_entered" from="CanvasLayer/movecamleft" to="restaurant/office/CamSELF" method="_on_movecamleft_mouse_entered"]
 [connection signal="mouse_exited" from="CanvasLayer/movecamleft" to="restaurant/office/CamSELF" method="_on_movecamleft_mouse_exited"]
 [connection signal="mouse_entered" from="CanvasLayer/movecamright" to="restaurant/office/CamSELF" method="_on_movecamright_mouse_entered"]

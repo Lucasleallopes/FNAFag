@@ -13,7 +13,7 @@ dest_files=["res://.godot/imported/roblox-death-sound_1.mp3-aa9154e5d0ac8870538e
 [params]
 
 loop=false
-loop_offset=0
-bpm=0
+loop_offset=0.0
+bpm=0.0
 beat_count=0
 bar_beats=4

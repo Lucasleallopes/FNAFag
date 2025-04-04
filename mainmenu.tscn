@@ -51,10 +51,10 @@ bbcode_enabled = true
 text = "Five Nights at FAG"
 
 [node name="TextButtonNewGame" type="Button" parent="."]
-offset_left = 82.0
-offset_top = 875.0
-offset_right = 689.0
-offset_bottom = 1020.0
+offset_left = 42.0
+offset_top = 878.0
+offset_right = 649.0
+offset_bottom = 1023.0
 theme_override_font_sizes/font_size = 100
 text = "Novo Jogo"
 flat = true
@@ -80,14 +80,17 @@ material = SubResource("ShaderMaterial_0ai3p")
 anchors_preset = -1
 anchor_right = 0.996
 anchor_bottom = 1.0
-offset_right = 7.67993
+offset_left = 4.0
+offset_top = 3.0
+offset_right = 11.6799
+offset_bottom = 3.0
 color = Color(1, 1, 1, 0)
 
 [node name="ActualButtonNewGame" type="Button" parent="CanvasLayer"]
-offset_left = 117.0
-offset_top = 878.0
-offset_right = 654.0
-offset_bottom = 1023.0
+offset_left = 85.0
+offset_top = 885.0
+offset_right = 622.0
+offset_bottom = 1030.0
 theme_override_font_sizes/font_size = 100
 theme_override_styles/hover = SubResource("StyleBoxEmpty_cnkny")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_4hewk")
@@ -96,10 +99,10 @@ flat = true
 script = ExtResource("3_iw76h")
 
 [node name="ActualButtonContinue" type="Button" parent="CanvasLayer"]
-offset_left = 91.0
-offset_top = 696.0
-offset_right = 574.0
-offset_bottom = 841.0
+offset_left = 86.0
+offset_top = 701.0
+offset_right = 569.0
+offset_bottom = 846.0
 theme_override_font_sizes/font_size = 100
 theme_override_styles/hover = SubResource("StyleBoxEmpty_cnkny")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_4hewk")
