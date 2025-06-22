@@ -118,4 +118,4 @@ func _on_button_increasestate_pressed():
 	state += 1
 
 func _on_sound_jump_finished():
-        get_tree().change_scene_to_file("res://gameover.tscn")
+		get_tree().change_scene_to_file("res://gameover.tscn")
