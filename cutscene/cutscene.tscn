@@ -1,11 +1,16 @@
-[gd_scene load_steps=3 format=3]
+[gd_scene load_steps=3 format=3 uid="uid://cscwdniseqprg"]
 
-[ext_resource type="VideoStream" path="res://cutscene/Cutscene.mp4" id="1_cutscene"]
-[ext_resource type="Script" path="res://scripts/cutscene/cutscene.gd" id="1_script"]
+[ext_resource type="Script" uid="uid://bxvaphr01pouy" path="res://scripts/cutscene/cutscene.gd" id="1_script"]
+[ext_resource type="VideoStream" path="res://cutscene/Cutscene.ogv" id="2_dgkl1"]
 
 [node name="Cutscene" type="Node2D"]
+scale = Vector2(1.1, 1.1)
 script = ExtResource("1_script")
 
 [node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
-stream = ExtResource("1_cutscene")
+offset_left = -94.5454
+offset_top = -60.0
+offset_right = 1825.45
+offset_bottom = 1020.0
+stream = ExtResource("2_dgkl1")
 autoplay = true
