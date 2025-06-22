@@ -50,6 +50,7 @@
 [ext_resource type="Texture2D" uid="uid://lqle72oyomqk" path="res://models/fagPlaces/file_2025-04-04_20.10.28.png" id="45_o6d2r"]
 [ext_resource type="Texture2D" uid="uid://codomgk21aepw" path="res://models/fagPlaces/file_2025-04-04_20.12.21.png" id="46_q6u72"]
 [ext_resource type="Texture2D" uid="uid://jwvsl4ddv61t" path="res://models/fagPlaces/file_2025-04-04_20.13.26.png" id="47_4xju4"]
+[ext_resource type="Script" uid="uid://pausemenu" path="res://scripts/night/pause_menu.gd" id="48_pause"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gacj4"]
 albedo_texture = ExtResource("2_pd7yv")
@@ -1112,3 +1113,21 @@ script = ExtResource("27_hw3dn")
 [connection signal="close_monitor" from="monitor control" to="monitoranim" method="_on_close_monitor"]
 [connection signal="open_monitor" from="monitor control" to="monitoranim" method="_on_open_monitor"]
 [connection signal="timeout" from="monitor control/countdown monitor" to="monitor control" method="_on_countdown_monitor"]
+[node name="PauseMenu" type="CanvasLayer" parent="."]
+pause_mode = 2
+
+[node name="Overlay" type="ColorRect" parent="PauseMenu"]
+offset_right = 1920.0
+offset_bottom = 1080.0
+color = Color(0, 0, 0, 0.3)
+
+[node name="ExitButton" type="Button" parent="PauseMenu"]
+offset_left = 760.0
+offset_top = 480.0
+offset_right = 1160.0
+offset_bottom = 560.0
+theme_override_font_sizes/font_size = 60
+text = "Sair ao Menu"
+script = ExtResource("48_pause")
+
+[connection signal="pressed" from="PauseMenu/ExitButton" to="PauseMenu" method="_on_exit_button_pressed"]
