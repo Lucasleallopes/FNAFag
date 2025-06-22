@@ -7,6 +7,5 @@ func _button_pressed():
         print("setting savefile to night 1")
         #TODO
         #change save file to night 1
-        print ("Loading night scene")
-        await get_tree().create_timer(6.0).timeout
-        get_tree().change_scene_to_file("res://night.tscn")
+        print("Loading cutscene")
+        get_tree().change_scene_to_file("res://cutscene/cutscene.tscn")
