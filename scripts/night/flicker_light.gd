@@ -22,4 +22,3 @@ func _process(delta):
 
 func _on_flicker_timer_timeout():
 	timerdone = true
-
