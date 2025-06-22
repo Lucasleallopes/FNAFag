@@ -1,9 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://b7glpda145gja"]
+[gd_scene load_steps=10 format=3 uid="uid://b7glpda145gja"]
 
 [ext_resource type="Texture2D" uid="uid://dv82j55tmr3ba" path="res://textures/fern/fern estático sem fundo.png" id="1_3pujl"]
 [ext_resource type="Shader" uid="uid://di1swemwtf7ew" path="res://shaders/vhs.gdshader" id="2_hvx5i"]
 [ext_resource type="Script" uid="uid://bwvxscmn4lb7r" path="res://scripts/mainmenu/continue.gd" id="2_rwf37"]
 [ext_resource type="Script" uid="uid://duh08ps37nek3" path="res://scripts/mainmenu/newgame.gd" id="3_iw76h"]
+[ext_resource type="PackedScene" uid="uid://b4rpolomrnea6" path="res://scripts/pause/pause_menu.tscn" id="5_7uvds"]
 [ext_resource type="AudioStream" uid="uid://gke53cgid0rd" path="res://audio/ROBLOX Music Horror.mp3" id="5_lr6br"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_0ai3p"]
@@ -109,6 +110,9 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_4hewk")
 action_mode = 0
 flat = true
 script = ExtResource("2_rwf37")
+
+[node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("5_7uvds")]
+visible = false
 
 [node name="music" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_lr6br")
