@@ -50,7 +50,6 @@
 [ext_resource type="Texture2D" uid="uid://lqle72oyomqk" path="res://models/fagPlaces/file_2025-04-04_20.10.28.png" id="45_o6d2r"]
 [ext_resource type="Texture2D" uid="uid://codomgk21aepw" path="res://models/fagPlaces/file_2025-04-04_20.12.21.png" id="46_q6u72"]
 [ext_resource type="Texture2D" uid="uid://jwvsl4ddv61t" path="res://models/fagPlaces/file_2025-04-04_20.13.26.png" id="47_4xju4"]
-[ext_resource type="Script" uid="uid://pc5nvty61qae" path="res://scripts/night/pause_control.gd" id="48_pctl0"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gacj4"]
 albedo_texture = ExtResource("2_pd7yv")
@@ -1082,26 +1081,6 @@ libraries = {
 &"": SubResource("AnimationLibrary_puqqh")
 }
 script = ExtResource("27_hw3dn")
-[node name="pause control" type="Node" parent="."]
-script = ExtResource("48_pctl0")
-
-[node name="PauseMenu" type="Control" parent="CanvasLayer"]
-visible = false
-offset_left = 710.0
-offset_top = 340.0
-offset_right = 1210.0
-offset_bottom = 620.0
-
-[node name="Label" type="Label" parent="CanvasLayer/PauseMenu"]
-offset_left = 20.0
-offset_top = 20.0
-text = "PAUSE"
-
-[node name="Exit" type="Button" parent="CanvasLayer/PauseMenu"]
-offset_left = 20.0
-offset_top = 100.0
-text = "Sair"
-
 
 [connection signal="timeout" from="restaurant/hallway left/Cam2A/flicker_timer" to="restaurant/hallway left/Cam2A" method="_on_flicker_timer_timeout"]
 [connection signal="mouse_entered" from="restaurant/office/buttons/buttonleftdoor" to="restaurant/office/doorleft" method="_on_buttonleftdoor_mouse_entered"]
@@ -1133,4 +1112,3 @@ text = "Sair"
 [connection signal="close_monitor" from="monitor control" to="monitoranim" method="_on_close_monitor"]
 [connection signal="open_monitor" from="monitor control" to="monitoranim" method="_on_open_monitor"]
 [connection signal="timeout" from="monitor control/countdown monitor" to="monitor control" method="_on_countdown_monitor"]
-[connection signal="pressed" from="CanvasLayer/PauseMenu/Exit" to="pause control" method="_on_exit_pressed"]
