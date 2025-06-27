@@ -1,6 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://0818f9f7b98f4"]
+[gd_scene load_steps=2 format=3 uid="uid://c2l0vwwow2yvj"]
 
-[ext_resource type="Script" uid="uid://27a23ffd3cb6" path="res://scripts/gameover/gameover.gd" id="1_abcd"]
+[ext_resource type="Script" path="res://scripts/gameover/gameover.gd" id="1_abcd"]
 
 [node name="GameOver" type="Node2D"]
 script = ExtResource("1_abcd")
@@ -11,12 +11,10 @@ offset_bottom = 1080.0
 color = Color(0, 0, 0, 1)
 
 [node name="Label" type="Label" parent="."]
-offset_left = 0.0
-offset_top = 0.0
 offset_right = 1920.0
 offset_bottom = 1080.0
-horizontal_alignment = 1
-vertical_alignment = 1
+theme_override_colors/font_color = Color(1, 0, 0, 1)
 theme_override_font_sizes/font_size = 120
 text = "FIM DE JOGO"
-theme_override_colors/font_color = Color(1, 0, 0, 1)
+horizontal_alignment = 1
+vertical_alignment = 1

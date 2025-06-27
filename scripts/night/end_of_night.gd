@@ -7,7 +7,7 @@ func _ready():
 	fade_rect = get_node("/root/Node3D/CanvasLayer/fade_rect")
 	# Create and start the timer for 5 minutes
 	timer = Timer.new()
-	timer.wait_time = 1.0
+	timer.wait_time = 10.0
 	timer.one_shot = true
 	add_child(timer)
 	timer.timeout.connect(self._on_timer_timeout)
