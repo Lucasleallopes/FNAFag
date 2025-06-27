@@ -17,7 +17,7 @@ func loadDone():
 		shouldFree = true
 
 func _on_timer_timeout():
-        if shouldFree:
-                call_deferred("queue_free")
-        get_tree().change_scene_to_file(LoadingScreen.next_scene_path)
-        canContinue = true
+		if shouldFree:
+				call_deferred("queue_free")
+		get_tree().change_scene_to_file(LoadingScreen.next_scene_path)
+		canContinue = true
