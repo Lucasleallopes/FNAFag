@@ -1,5 +1,5 @@
 # FNAFAG
-![Captura de tela 2025-04-04 200702](https://github.com/user-attachments/assets/41e7005e-f20e-4d4e-a67e-a0c1fc4fd5a6)
+![image](https://github.com/user-attachments/assets/a4696f5f-abb4-4662-ba58-6adeb573da4b)
 
 # Estória
 
@@ -7,18 +7,18 @@ A Universidade FAG já foi um centro acadêmico de prestígio, mas um experiment
 
 # Especificações
 
-- **Gênero:** Survival Horror / Stealth
+- **Gênero:** Survival Horror
 - **Estilo:** Point Click e 2D (perspectiva isométrica ou visão de câmera fixa)
 - **Número de Jogadores:** 1
 - **Duração Média:** 1-2 horas por partida, dependendo do desempenho do jogador
-- **Idade Recomendada:** 16+
+- **Idade Recomendada:** 14+
 
 # Estrutura do Jogo
 
 O jogador assume o papel de um estudante que deve passar a noite na universidade. Durante a noite, ele precisa encontrar documentos espalhados pela escola enquanto evita os autômatos que percorrem os corredores. O objetivo é sobreviver até o amanhecer, mantendo-se em segurança e evitando os ataques dos inimigos.
 
 - **Fases:** O jogo é dividido em noites, sendo que cada uma apresenta novas dificuldades.
-- **Objetivo:** Recuperar documentos específicos enquanto sobrevive aos ataques dos autômatos.
+- **Objetivo:** Recuperar documentos específicos enquanto sobrevive aos ataques dos animatronics.
 
 # Estrutura do Cenário
 
