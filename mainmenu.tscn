@@ -52,10 +52,10 @@ bbcode_enabled = true
 text = "Five Nights at FAG"
 
 [node name="TextButtonNewGame" type="Button" parent="."]
-offset_left = 42.0
-offset_top = 878.0
-offset_right = 649.0
-offset_bottom = 1023.0
+offset_left = 26.0
+offset_top = 772.0
+offset_right = 633.0
+offset_bottom = 917.0
 theme_override_font_sizes/font_size = 100
 text = "Novo Jogo"
 flat = true
@@ -66,19 +66,19 @@ scale = Vector2(7.095, 7.13354)
 texture = ExtResource("1_3pujl")
 
 [node name="TextButtonContinue" type="Button" parent="."]
-offset_left = 92.0
-offset_top = 696.0
-offset_right = 575.0
-offset_bottom = 841.0
+offset_left = 81.0
+offset_top = 597.0
+offset_right = 572.0
+offset_bottom = 742.0
 theme_override_font_sizes/font_size = 100
 text = "Continuar"
 flat = true
 
 [node name="TextButtonExit" type="Button" parent="."]
-offset_left = 92.0
-offset_top = 960.0
-offset_right = 575.0
-offset_bottom = 1080.0
+offset_left = -59.0
+offset_top = 934.0
+offset_right = 424.0
+offset_bottom = 1079.0
 theme_override_font_sizes/font_size = 100
 text = "Sair"
 flat = true
@@ -97,10 +97,10 @@ offset_bottom = 3.0
 color = Color(1, 1, 1, 0)
 
 [node name="ActualButtonNewGame" type="Button" parent="CanvasLayer"]
-offset_left = 85.0
-offset_top = 885.0
-offset_right = 622.0
-offset_bottom = 1030.0
+offset_left = 69.0
+offset_top = 779.0
+offset_right = 606.0
+offset_bottom = 924.0
 theme_override_font_sizes/font_size = 100
 theme_override_styles/hover = SubResource("StyleBoxEmpty_cnkny")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_4hewk")
@@ -109,10 +109,10 @@ flat = true
 script = ExtResource("3_iw76h")
 
 [node name="ActualButtonContinue" type="Button" parent="CanvasLayer"]
-offset_left = 86.0
-offset_top = 701.0
-offset_right = 569.0
-offset_bottom = 846.0
+offset_left = 75.0
+offset_top = 602.0
+offset_right = 558.0
+offset_bottom = 747.0
 theme_override_font_sizes/font_size = 100
 theme_override_styles/hover = SubResource("StyleBoxEmpty_cnkny")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_4hewk")
@@ -121,10 +121,10 @@ flat = true
 script = ExtResource("2_rwf37")
 
 [node name="ActualButtonExit" type="Button" parent="CanvasLayer"]
-offset_left = 86.0
-offset_top = 966.0
-offset_right = 569.0
-offset_bottom = 1080.0
+offset_left = -65.0
+offset_top = 940.0
+offset_right = 418.0
+offset_bottom = 1054.0
 theme_override_font_sizes/font_size = 100
 theme_override_styles/hover = SubResource("StyleBoxEmpty_cnkny")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_4hewk")

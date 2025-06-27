@@ -1,16 +1,16 @@
 [gd_scene load_steps=3 format=3 uid="uid://fimdanoite"]
 
-[ext_resource type="Script" uid="uid://fimdanoitegd" path="res://scripts/cutscene/fim_da_noite.gd" id="1_script"]
-[ext_resource type="VideoStream" uid="uid://fimdanoitevid" path="res://cutscene/Fim-da-noite-480.ogv" id="2_vid"]
+[ext_resource type="Script" uid="uid://vgah17bd5rsg" path="res://scripts/cutscene/fim_da_noite.gd" id="1_script"]
+[ext_resource type="VideoStream" uid="uid://cqf2fh7fjotkw" path="res://cutscene/Fim-da-noite-480.ogv" id="2_vid"]
 
 [node name="Cutscene" type="Node2D"]
-scale = Vector2(1.1, 1.1)
+scale = Vector2(2.7, 2.7)
 script = ExtResource("1_script")
 
 [node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
-offset_left = -94.5454
-offset_top = -60.0
-offset_right = 1825.45
-offset_bottom = 1020.0
+offset_left = -17.25
+offset_top = -7.85
+offset_right = 834.75
+offset_bottom = 472.15
 stream = ExtResource("2_vid")
 autoplay = true
