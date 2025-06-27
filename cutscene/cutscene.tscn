@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cscwdniseqprg"]
 
 [ext_resource type="Script" uid="uid://bxvaphr01pouy" path="res://scripts/cutscene/cutscene.gd" id="1_script"]
-[ext_resource type="VideoStream" path="res://cutscene/Cutscene.ogv" id="2_dgkl1"]
+[ext_resource type="VideoStream" uid="uid://bdec13lol1ttt" path="res://cutscene/Cutscene.ogv" id="2_dgkl1"]
 
 [node name="Cutscene" type="Node2D"]
 scale = Vector2(1.1, 1.1)

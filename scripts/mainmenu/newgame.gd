@@ -8,4 +8,7 @@ func _button_pressed():
 		#TODO
 		#change save file to night 1
 		print("Loading cutscene")
-		get_tree().change_scene_to_file("res://cutscene/cutscene.tscn")
+		get_tree().change_scene_to_file("res://cutscene/LoadingScreen.tscn")
+
+
+		
