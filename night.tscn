@@ -50,6 +50,7 @@
 [ext_resource type="Texture2D" uid="uid://lqle72oyomqk" path="res://models/fagPlaces/file_2025-04-04_20.10.28.png" id="45_o6d2r"]
 [ext_resource type="Texture2D" uid="uid://codomgk21aepw" path="res://models/fagPlaces/file_2025-04-04_20.12.21.png" id="46_q6u72"]
 [ext_resource type="Texture2D" uid="uid://jwvsl4ddv61t" path="res://models/fagPlaces/file_2025-04-04_20.13.26.png" id="47_4xju4"]
+[ext_resource type="Script" uid="uid://endnight1234" path="res://scripts/night/end_of_night.gd" id="48_endnight"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gacj4"]
 albedo_texture = ExtResource("2_pd7yv")
@@ -1071,6 +1072,18 @@ offset_bottom = 128.0
 theme_override_font_sizes/font_size = 21
 text = "+1"
 
+[node name="fade_rect" type="ColorRect" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_left = 0
+anchor_top = 0
+anchor_right = 1
+anchor_bottom = 1
+offset_left = 0
+offset_top = 0
+offset_right = 0
+offset_bottom = 0
+color = Color(0, 0, 0, 0)
+visible = false
 [node name="monitor control" type="Node" parent="."]
 script = ExtResource("26_8e0sh")
 
@@ -1081,6 +1094,8 @@ libraries = {
 &"": SubResource("AnimationLibrary_puqqh")
 }
 script = ExtResource("27_hw3dn")
+[node name="EndOfNight" type="Node" parent="."]
+script = ExtResource("48_endnight")
 
 [connection signal="timeout" from="restaurant/hallway left/Cam2A/flicker_timer" to="restaurant/hallway left/Cam2A" method="_on_flicker_timer_timeout"]
 [connection signal="mouse_entered" from="restaurant/office/buttons/buttonleftdoor" to="restaurant/office/doorleft" method="_on_buttonleftdoor_mouse_entered"]
