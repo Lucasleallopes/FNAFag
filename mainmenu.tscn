@@ -1,10 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://b7glpda145gja"]
+[gd_scene load_steps=10 format=3 uid="uid://b7glpda145gja"]
 
 [ext_resource type="Texture2D" uid="uid://dv82j55tmr3ba" path="res://textures/fern/fern estático sem fundo.png" id="1_3pujl"]
 [ext_resource type="Shader" uid="uid://di1swemwtf7ew" path="res://shaders/vhs.gdshader" id="2_hvx5i"]
 [ext_resource type="Script" uid="uid://bwvxscmn4lb7r" path="res://scripts/mainmenu/continue.gd" id="2_rwf37"]
 [ext_resource type="Script" uid="uid://duh08ps37nek3" path="res://scripts/mainmenu/newgame.gd" id="3_iw76h"]
-[ext_resource type="Script" uid="uid://ib22iiy8widqz" path="res://scripts/mainmenu/exit.gd" id="4_wulw2"]
+[ext_resource type="Script" uid="uid://lacce5qr3l8h" path="res://scripts/mainmenu/exit.gd" id="4_wulw2"]
 [ext_resource type="AudioStream" uid="uid://gke53cgid0rd" path="res://audio/ROBLOX Music Horror.mp3" id="5_lr6br"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_0ai3p"]
@@ -73,6 +73,7 @@ offset_bottom = 841.0
 theme_override_font_sizes/font_size = 100
 text = "Continuar"
 flat = true
+
 [node name="TextButtonExit" type="Button" parent="."]
 offset_left = 92.0
 offset_top = 960.0
@@ -81,7 +82,6 @@ offset_bottom = 1080.0
 theme_override_font_sizes/font_size = 100
 text = "Sair"
 flat = true
-
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -119,6 +119,7 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_4hewk")
 action_mode = 0
 flat = true
 script = ExtResource("2_rwf37")
+
 [node name="ActualButtonExit" type="Button" parent="CanvasLayer"]
 offset_left = 86.0
 offset_top = 966.0
@@ -130,7 +131,6 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_4hewk")
 action_mode = 0
 flat = true
 script = ExtResource("4_wulw2")
-
 
 [node name="music" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_lr6br")
