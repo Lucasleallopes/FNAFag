@@ -5,6 +5,10 @@ var scenePath: String
 var dummyProgress: Array = []
 const useSubThreads: bool = true
 
+# Caminho padrao da proxima cena apos o carregamento. Pode ser alterado
+# antes de mostrar a tela de carregamento para controlar o fluxo.
+var next_scene_path: String = "res://cutscene/Cutscene.tscn"
+
 signal loadDone
 
 var timer_ready := false
